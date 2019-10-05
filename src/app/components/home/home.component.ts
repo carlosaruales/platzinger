@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
       nick: "Marcela",
       age: 26,
       email: "marcela.ruales@gmail.com",
-      friend:true,
+      friend:false,
       uid:2
     }
 
