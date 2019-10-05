@@ -8,9 +8,13 @@ import { HomeComponent } from './components/home/home.component';
 import { ConversationComponent } from './components/conversation/conversation.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { Routes, RouterModule} from '@angular/router';
+import { MenuComponent } from './components/menu/menu.component';
 
 const appRoutes:Routes = [
-  {path:"home", component: HomeComponent}
+  {path:"home", component: HomeComponent},
+  {path:"login", component: LoginComponent},
+  {path:"conversation", component: ConversationComponent},
+  {path:"profile", component: ProfileComponent},
 ]
 
 @NgModule({
@@ -19,7 +23,8 @@ const appRoutes:Routes = [
     LoginComponent,
     HomeComponent,
     ConversationComponent,
-    ProfileComponent
+    ProfileComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
