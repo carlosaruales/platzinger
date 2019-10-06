@@ -1,13 +1,17 @@
 <h5>Amigos</h5>
 <div *ngFor="let user of friends; let i = index">
   <p *ngIf="user.friend">
-    {{i}}. {{user.nick}} - {{user.email}}
+      <a routerLink="/conversation/{{user.uid}}">
+      {{i}}. {{user.nick}} - {{user.email}}
+    </a>
   </p>
 </div>
 
 <h5>No Amigos</h5>
 <div *ngFor="let user of friends; let i = index">
   <p *ngIf="!user.friend">
-    {{i}}. {{user.nick}} - {{user.email}}
+    <a routerLink="/conversation/{{user.uid}}">
+      {{i}}. {{user.nick}} - {{user.email}}
+    </a>
   </p>
 </div>

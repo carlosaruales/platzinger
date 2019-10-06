@@ -13,7 +13,7 @@ import { MenuComponent } from './components/menu/menu.component';
 const appRoutes:Routes = [
   {path:"home", component: HomeComponent},
   {path:"login", component: LoginComponent},
-  {path:"conversation", component: ConversationComponent},
+  {path:"conversation/:uid", component: ConversationComponent},
   {path:"profile", component: ProfileComponent},
 ]
 
