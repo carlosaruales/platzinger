@@ -9,6 +9,9 @@ import { ConversationComponent } from './components/conversation/conversation.co
 import { ProfileComponent } from './components/profile/profile.component';
 import { Routes, RouterModule} from '@angular/router';
 import { MenuComponent } from './components/menu/menu.component';
+import { SearchPipe } from './pipes/search.pipe';
+import { FormsModule } from "@angular/forms"; //Esto da soporte a la etiquita ngModels dentro del DOM
+
 
 const appRoutes:Routes = [
   {path:"home", component: HomeComponent},
@@ -24,12 +27,14 @@ const appRoutes:Routes = [
     HomeComponent,
     ConversationComponent,
     ProfileComponent,
-    MenuComponent
+    MenuComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
