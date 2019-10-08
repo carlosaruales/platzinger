@@ -3,5 +3,9 @@
 <div *ngFor="let user of friends | search: query; let i = index">
   <a routerLink="/conversation/{{user.uid}}">
     {{i}}. {{user.nick}} - {{user.email}}
+    <span *ngIf="user.status==0"><img src="assets/img/logo_live_online.png" alt="online" class="estado"></span>
+    <span *ngIf="user.status==1"><img src="assets/img/logo_live_offline.png" alt="online" class="estado"></span>
+    <span *ngIf="user.status==2"><img src="assets/img/logo_live_busy.png" alt="online" class="estado"></span>
+    <span *ngIf="user.status==3"><img src="assets/img/logo_live_away.png" alt="online" class="estado"></span>
   </a>
 </div>

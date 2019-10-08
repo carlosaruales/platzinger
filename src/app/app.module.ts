@@ -11,6 +11,7 @@ import { Routes, RouterModule} from '@angular/router';
 import { MenuComponent } from './components/menu/menu.component';
 import { SearchPipe } from './pipes/search.pipe';
 import { FormsModule } from "@angular/forms"; //Esto da soporte a la etiquita ngModels dentro del DOM
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 
 const appRoutes:Routes = [
@@ -34,9 +35,11 @@ const appRoutes:Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

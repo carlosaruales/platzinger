@@ -4,5 +4,6 @@ export interface User{
   age?: number, 
   email: string, 
   friend: boolean, 
-  uid: any 
+  uid: any ,
+  status: number //0: apagado; 1: en linea; 2: Ocupado; 3: Ausente
 }

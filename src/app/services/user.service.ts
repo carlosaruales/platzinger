@@ -12,7 +12,8 @@ export class UserService {
       age: 26,
       email: "carlosa.ruales@gmail.com",
       friend:true,
-      uid:1
+      uid:1,
+      status:0
     }
 
     let usuario2:User ={
@@ -20,7 +21,8 @@ export class UserService {
       age: 26,
       email: "marcela.ruales@gmail.com",
       friend:false,
-      uid:2
+      uid:2,
+      status:1
     }
 
     let usuario3:User ={
@@ -28,7 +30,8 @@ export class UserService {
       age: 26,
       email: "deyanira.acosta@gmail.com",
       friend:true,
-      uid:3
+      uid:3,
+      status:2
     }
 
     let usuario4:User ={
@@ -36,7 +39,8 @@ export class UserService {
       age: 26,
       email: "deyanira.acosta@gmail.com",
       friend:true,
-      uid:4
+      uid:4,
+      status:3
     }
 
     let usuario5:User ={
@@ -44,7 +48,8 @@ export class UserService {
       age: 26,
       email: "alberto.ruales@gmail.com",
       friend:true,
-      uid:5
+      uid:5,
+      status:1
     }
 
     this.friends = [usuario1,usuario2,usuario3,usuario4,usuario5];
